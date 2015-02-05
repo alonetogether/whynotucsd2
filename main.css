@@ -5,6 +5,11 @@
  */
 
 /* Center the entire body */
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
 .aligner-body {
 	margin: auto;
 	text-align: center;
@@ -12,4 +17,39 @@
 
 .header-page {
 	text-align: center;
+	background-color:#43f2b6;
+	top:0;
+	width:100%;
+	-webkit-box-shadow: 0px 0px 4px 0px #000000;
+	-moz-box-shadow: 0px 0px 4px 0px #000000;
+	box-shadow: 0px 0px 4px 0px #000000;
+	margin-left:0px;
+	margin-right:0px;
+	color:#f8f8f8;
+	z-index:3333;
+	position:fixed;
+}
+
+.header-blank{
+	height:1em;
+}
+
+
+.header-text {
+	font-size: 1.5em;
+	text-transform:uppercase;
+	font-weight:700;
+}
+
+
+
+
+/*goals block styling*/
+
+.block-goal-longterm {
+	border: 2px solid black;
+	border-radius:8px;
+	width: 50%;
+	margin: auto;
+	margin-top: 50px;
 }

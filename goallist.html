@@ -8,43 +8,54 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="main.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
 
 		<!-- Page Styles -->
-		<style>
-			.block-goal-longterm {
-				border: 2px solid black;
-				width: 50%;
-				margin: auto;
-				margin-top: 50px;
-			}
-		</style>
+
 	</head>
+
 	
 	<body>
 		<!-- Align body content -->
 		<div class="aligner-body">
 			<!-- Page Header -->
 			<div class="header-page">
-				<h1>My Goals</h1>
+				<h1 class="header-text">My Goals</h1>
+			</div>
+
+			<!-- Thomas: this is currently my way of making content appear below the header-->
+			<div class="header-blank">
 			</div>
 
 			<!-- Goal List -->
-			<div class="block-goal-longterm" id="0" onclick="showWeeklyGoal(this)">
-				<h3>Long Term Goal</h3>
+			<div class="block-goal-longterm">
+				<h3>Eat well</h3>
 			</div>
+				<!-- Weekly Goal -->
+				<div>
+					<p class="weeklygoalp" id="0" onclick="addWeeklyGoal(this)"> add goal</p>
+				</div>
 
-			<div class="block-goal-longterm" id="1" onclick="showWeeklyGoal(this)">
-				<h3>Long Term Goal</h3>
+			<div class="block-goal-longterm" >
+				<h3>Sleep well</h3>
 			</div>
+				<!-- Weekly Goal -->
+				<div>
+					<p class="weeklygoalp" id="1" onclick="addWeeklyGoal(this)"> add goal </p>
+				</div>
 
-			<div class="block-goal-longterm" id="2" onclick="showWeeklyGoal(this)">
-				<h3>Long Term Goal</h3>
+			<div class="block-goal-longterm">
+				<h3>Find a summer gig</h3>
 			</div>
+				<!-- Weekly Goal -->
+				<div>
+					<p class="weeklygoalp" id="2" onclick="addWeeklyGoal(this)"> add goal</p>
+				</div>			
 		</div>
 
 		<script>
 			var weeklyGoals = ["goal1", "goal2", "goal3"];
-			function showWeeklyGoal(LtgDiv) {
+			function addWeeklyGoal(LtgDiv) {
 				$("#" + LtgDiv.id).after("<p>" + weeklyGoals[LtgDiv.id] + "</p>");
 			}
 		</script>
