@@ -1,0 +1,90 @@
+<!--
+ - Author: Akshat Vasavada
+ - Last Modified: Feb. 4, 2015
+ - Lists User's Long Term and Weekly Goals
+ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
+
+		<!-- Page Styles -->
+
+	</head>
+
+	
+	<body>
+		<!-- Align body content -->
+		<div class="aligner-body">
+			<!-- Page Header -->
+			<div class="header-page">
+				<h1 class="header-text">My Goals</h1>
+			</div>
+
+			<!-- Thomas: this is currently my way of making content appear below the header-->
+			<div class="header-blank">
+			</div>
+
+
+
+			<!-- Goal List -->
+			<!-- Goal Container -->
+			<div class="goalcontainer">
+
+			<div class="block-goal-longterm">
+				<h3 contenteditable="true">Eat well and edit me</h3>
+			</div>
+				<!-- Weekly Goal -->
+				<div class="weeklygoaldiv" contenteditable="true">
+					<p id="0" onclick="addWeeklyGoal(this)">edit me</p>
+				</div>		
+
+			</div> <!-- end goal container -->
+
+
+			<!-- Goal Container -->
+			<div class="goalcontainer">
+
+			<div class="block-goal-longterm" >
+				<h3 contenteditable="true">Sleep well</h3>
+			</div>
+				<!-- Weekly Goal -->
+				<div class="weeklygoaldiv" contenteditable="true">
+					<p id="1" onclick="addWeeklyGoal(this)">edit me</p>
+				</div>		
+
+			</div> <!-- end goal container -->
+
+			<!-- Goal Container -->
+			<div class="goalcontainer">
+
+			<div class="block-goal-longterm">
+				<h3 contenteditable="true">Find a summer gig</h3>
+			</div>
+				<!-- Weekly Goal -->
+				<div class="weeklygoaldiv"  contenteditable="true">
+					<p id="2" onclick="addWeeklyGoal(this)">edit me</p>
+				</div>
+
+			</div> <!-- end goal container -->	
+
+
+		</div>
+
+		<script>
+			var weeklyGoals = ["wish i could add a goal by clicking this", "wish i could add a goal by clicking this", "wish i could add a goal by clicking this"];
+			function addWeeklyGoal(LtgDiv) {
+				$("#" + LtgDiv.id).after("<p>" + weeklyGoals[LtgDiv.id] + "</p>");
+			}
+		</script>
+
+		<!-- Imported Scripts -->
+		<!-- JQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Add main script (gets header and navbar) -->
+		<!-- "delay" is an optimization -->
+		<script src="main.js" type="text/javascript" delay></script>
+	</body>
+</html>
