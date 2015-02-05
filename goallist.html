@@ -27,34 +27,54 @@
 			<div class="header-blank">
 			</div>
 
+
+
 			<!-- Goal List -->
+			<!-- Goal Container -->
+			<div class="goalcontainer">
+
 			<div class="block-goal-longterm">
-				<h3>Eat well</h3>
+				<h3 contenteditable="true">Eat well</h3>
 			</div>
 				<!-- Weekly Goal -->
-				<div>
-					<p class="weeklygoalp" id="0" onclick="addWeeklyGoal(this)"> add goal</p>
-				</div>
+				<div class="weeklygoaldiv" contenteditable="true">
+					<p id="0" onclick="addWeeklyGoal(this)">edit me</p>
+				</div>		
+
+			</div> <!-- end goal container -->
+
+
+			<!-- Goal Container -->
+			<div class="goalcontainer">
 
 			<div class="block-goal-longterm" >
-				<h3>Sleep well</h3>
+				<h3 contenteditable="true">Sleep well</h3>
 			</div>
 				<!-- Weekly Goal -->
-				<div>
-					<p class="weeklygoalp" id="1" onclick="addWeeklyGoal(this)"> add goal </p>
-				</div>
+				<div class="weeklygoaldiv" contenteditable="true">
+					<p id="1" onclick="addWeeklyGoal(this)">edit me</p>
+				</div>		
+
+			</div> <!-- end goal container -->
+
+			<!-- Goal Container -->
+			<div class="goalcontainer">
 
 			<div class="block-goal-longterm">
-				<h3>Find a summer gig</h3>
+				<h3 contenteditable="true">Find a summer gig</h3>
 			</div>
 				<!-- Weekly Goal -->
-				<div>
-					<p class="weeklygoalp" id="2" onclick="addWeeklyGoal(this)"> add goal</p>
-				</div>			
+				<div class="weeklygoaldiv"  contenteditable="true">
+					<p id="2" onclick="addWeeklyGoal(this)">edit me</p>
+				</div>
+
+			</div> <!-- end goal container -->	
+
+
 		</div>
 
 		<script>
-			var weeklyGoals = ["goal1", "goal2", "goal3"];
+			var weeklyGoals = ["add goal bro", "add goal bro", "add goal bro"];
 			function addWeeklyGoal(LtgDiv) {
 				$("#" + LtgDiv.id).after("<p>" + weeklyGoals[LtgDiv.id] + "</p>");
 			}
