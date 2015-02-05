@@ -1,0 +1,15 @@
+/*
+ * Author: Akshat Vasavada
+ * Last Modified: Feb. 4, 2015
+ * Main styles applied throughout
+ */
+
+/* Center the entire body */
+.aligner-body {
+	margin: auto;
+	text-align: center;
+}
+
+.header-page {
+	text-align: center;
+}
