@@ -5,6 +5,11 @@
  */
 
 /* Center the entire body */
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
 .aligner-body {
 	margin: auto;
 	text-align: center;
@@ -12,4 +17,84 @@
 
 .header-page {
 	text-align: center;
+	background-color:#43f2b6;
+	top:0;
+	width:100%;
+	-webkit-box-shadow: 0px 0px 4px 0px #000000;
+	-moz-box-shadow: 0px 0px 4px 0px #000000;
+	box-shadow: 0px 0px 4px 0px #000000;
+	margin-left:0px;
+	margin-right:0px;
+	color:#f8f8f8;
+	z-index:3333;
+	position:fixed;
+}
+
+.header-blank{
+	height:1em;
+	margin-top:70px;
+}
+
+
+.header-text {
+	font-size: 1.5em;
+	text-transform:uppercase;
+	font-weight:700;
+}
+
+
+
+
+/*goals block styling*/
+
+.block-goal-longterm {
+	border: 2px solid black;
+	border-radius:8px;
+	margin: auto;
+	margin-left:8px;
+}
+
+.block-goal-longterm:hover {
+	border: 2px solid black;
+	border-radius:8px;
+	margin: auto;
+	background-color:black;
+	margin-left:8px;
+	color:#f8f8f8;
+	text-decoration:underline;
+
+}
+
+.weeklygoaldiv {
+	margin-top:4px;
+	margin-bottom:4px;
+	text-align:left;
+	margin-left:10px;
+}
+
+.goalcontainer {
+	max-width:800px;
+	min-width:375px;
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+
+/* *:focus, input, input:focus, textarea:focus, select, a {
+	outline:none;
+}*/
+
+*:focus {
+	outline: dotted;
+	outline-color: gray;
+	outline-width:1px;
+}
+
+::selection {
+  background: #f18f3f; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #f18f3f; /* Gecko Browsers */
 }
