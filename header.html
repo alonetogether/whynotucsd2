@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#header * {
+				float: right;
+				margin-right: 10px;
+			}
+
+			#header img {
+				width: 20px;
+			}
+
+			#header p {
+				margin-top: 2px;
+				color: black;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="header">
+			<!-- Will take you to settings.html when clicked -->
+			<a href="C:\Users\Akshat Vasavada\Desktop\School\UCSD\2014-2015\Winter 2015\CSE 170\Project (Local)\settings.html">
+				<img src="C:\Users\Akshat Vasavada\Desktop\School\UCSD\2014-2015\Winter 2015\CSE 170\Project (Local)\settings.png" alt="Preferences">
+			</a>
+
+			<!-- float right arranges elements in reverse order from appearance -->
+			<a href="C:\Users\Akshat Vasavada\Desktop\School\UCSD\2014-2015\Winter 2015\CSE 170\Project (Local)\index.html">
+				<p onclick="logoutUser()">Logout</p>
+			</a>
+		</div>
+
+		<script>
+			function logoutUser() {
+				alert("You are now being logged out...");
+			}
+		</script>
+	</body>
+</html>
