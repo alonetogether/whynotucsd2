@@ -7,12 +7,13 @@
 /* Center the entire body */
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 .aligner-body {
 	margin: auto;
 	text-align: center;
+	position: relative;
+	top: 100px;
 }
 
 .header-page {
@@ -51,18 +52,13 @@ body {
 	border: 2px solid black;
 	border-radius:8px;
 	margin: auto;
-	margin-left:8px;
+	width: 50%;
 }
 
 .block-goal-longterm:hover {
-	border: 2px solid black;
-	border-radius:8px;
-	margin: auto;
 	background-color:black;
-	margin-left:8px;
 	color:#f8f8f8;
 	text-decoration:underline;
-
 }
 
 .weeklygoaldiv {
