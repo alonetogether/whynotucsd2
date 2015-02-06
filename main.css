@@ -53,6 +53,7 @@ body {
 	border-radius:8px;
 	margin: auto;
 	width: 50%;
+	text-align: center;
 }
 
 .block-goal-longterm:hover {
