@@ -1,0 +1,37 @@
+/* CSS styles applied to entire app */
+
+body {
+	background-color: #ffd700;
+}
+
+/* Center all content on the page */
+.container-body-page, .container-body-page * {
+	margin: auto;
+	text-align: center;
+}
+
+.header-page {
+	border-bottom: 2px solid black;
+	background-color: #6495ed;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.cell-header {
+	width: 100%;
+}
+
+.cell-header h1 {
+	color: white;
+}
+
+.icon-settings {
+	 width: 20px;
+}
+
+.container-content-main {
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
