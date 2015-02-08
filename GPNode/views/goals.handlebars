@@ -38,8 +38,9 @@
 
 			<div class="container-content-main">
 				{{#each ltg}}
-				<div class="block-ltg">
+				<div class="block-ltg" onclick="toggleWeeklyGoals(this)">
 					<h3>{{goal}}</h3>
+					<h3>{{description}}</h3>
 				</div>
 				{{/each}}
 			</div>
@@ -55,6 +56,12 @@
 				</table>
 			</div>
 		</div>
+		<script>
+ 			
+ 			function showWeeklyGoal(LtgDiv) {
+ 				$("#" + LtgDiv.id).after("<p>" + hi[LtgDiv.id]  + "</p>");
+ 			}
+ 		</script>
 
 		<script src="js\jquery-1.11.0.js"></script>
 		<script>
@@ -62,5 +69,9 @@
 				toggleWeeklyGoals(this);
 			});
 		</script>
+		<script>
+		function toggleWeeklyGoals(LtgDiv){
+			$("#" + LtgDiv.id).after("<p>" + {{description}} [LtgDiv.id] +<"/p>");
+		}
 	</body>
 </html>
