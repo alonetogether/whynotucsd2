@@ -95,3 +95,28 @@ body {
 ::-moz-selection {
   background: #f18f3f; /* Gecko Browsers */
 }
+
+/*RESPECTS PAGE CSS*/
+
+.respectentry-container {
+	float:left;
+	width:100%;
+}
+
+.respectentry-top {
+	float:right;
+	/*background-color:red;*/
+}
+
+.respectentry-bottom {
+	float:left;
+	/*background-color:green;*/
+	margin-left:10%;
+}
+
+.respecticon {
+	color:#f18f3f;
+	float:left;
+	height:auto;
+	/*background-color:yellow;*/
+}
