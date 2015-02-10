@@ -64,6 +64,15 @@
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
   });
+  /* make the API call */
+FB.api(
+    "/{friendlist-id}",
+    function (response) {
+      if (response && !response.error) {
+        /* handle the result */
+      }
+    }
+);
 
   };
 
