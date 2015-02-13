@@ -1,10 +1,5 @@
-var ltg = require('../ltg.json');
+var goals = require('../goals.json');
 
 exports.view = function(req, res){
-	res.render('goals', ltg);
+	res.render('goals', goals);
 };
-// var wgs = require('../ltg.json');
-
-// exports.view = function(req, res){
-// 	res.render('description', wgs);
-// };

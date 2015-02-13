@@ -4,6 +4,7 @@
 	<head>
 		<title>My Goals</title>
 		<!-- Import CSS -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
 		<link type="text/css" rel="stylesheet" href="css/main.css">
 
 		<style>
@@ -21,21 +22,21 @@
 				background-color: black;
 				color: white;
 			}
-			<style>
-		#header {
-			text-align: center;
-			background-color:#43f2b6;
-			top:0;
-			width:100%;
-			-webkit-box-shadow: 0px 0px 4px 0px #000000;
-			-moz-box-shadow: 0px 0px 4px 0px #000000;
-			box-shadow: 0px 0px 4px 0px #000000;
-			color:white;
-			z-index:3333;
-			position:fixed;
-			left:0px;
-		}
-		#header * {
+
+			#header {
+				text-align: center;
+				background-color:#43f2b6;
+				top:0;
+				width:100%;
+				-webkit-box-shadow: 0px 0px 4px 0px #000000;
+				-moz-box-shadow: 0px 0px 4px 0px #000000;
+				box-shadow: 0px 0px 4px 0px #000000;
+				color:white;
+				z-index:3333;
+				position:fixed;
+				left:0px;
+			}
+			#header * {
 				margin-right: 10px;
 			}
 			#header table {
@@ -46,7 +47,6 @@
 				width: 80%;
 				font-size: 50%;
 				color: white;
-				f
 			}
 
 			#header img {
@@ -57,7 +57,6 @@
 				margin-top: 2px;
 				color: black;
 			}
-	</style>
 		</style>
 	</head>
 
@@ -75,9 +74,14 @@
 
 			<div class="container-content-main">
 				{{#each ltg}}
-				<div class="block-ltg" onclick="toggleWeeklyGoals(this)">
+				<div class="block-ltg" data-toggle="collapse" data-target=".{{id}}">
 					<h3>{{goal}}</h3>
 				</div>
+					{{#each wgs}}
+					<div class="{{id}} collapse">
+						<p>{{description}}</p>
+					</div>
+					{{/each}}
 				{{/each}}
 			</div>
 
@@ -91,22 +95,18 @@
 				</table>
 			</div>
 		</div>
-		<script>
- 			
- 			function showWeeklyGoal(LtgDiv) {
- 				$("#" + LtgDiv.id).after("<p>" + hi[LtgDiv.id]  + "</p>");
- 			}
- 		</script>
 
 		<script src="js\jquery-1.11.0.js"></script>
+		<script src="js\bootstrap.js"></script>
+
 		<script>
 			$(".block-ltg").click(function() {
 				toggleWeeklyGoals(this);
 			});
+
+			function toggleWeeklyGoals(LtgDiv) {
+				console.log(LtgDiv);
+ 			}
 		</script>
-		<script>
-		function toggleWeeklyGoals(LtgDiv){
-			// $("#" + LtgDiv.id).after("<p>" + {{description}} [LtgDiv.id] +<"/p>");
-		}
 	</body>
 </html>
