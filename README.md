@@ -1,5 +1,13 @@
-# GoalPeer
-<<<<<<< HEAD
-CSE 170 Winter 2015 Project
-=======
->>>>>>> 6183a4fb7f5bac788ccebee0c418a60957e8d5f1
+Vagrant for Introduction to HCI
+=====
+
+Includes setup files to create an Ubuntu (Precise Pangolin) machine.
+
+Prerequisites
+----
+VirtualBox and Vagrant
+
+Installation
+----
+Clone or unzip the repository. Run ```vagrant up``` from the command line.
+# whynotucsd2
